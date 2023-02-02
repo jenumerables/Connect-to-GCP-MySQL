@@ -17,3 +17,12 @@ my_result = my_cursor.fetchone()
 while my_result is not None:
   print(my_result)
   my_result = my_cursor.fetchone()
+
+
+"""
+Disable delete protection in gcloud in order to delete the GCP SQL instance.
+
+COMMAND
+
+gcloud sql instances patch myfirstdatabase23 --no-deletion-protection
+"""
